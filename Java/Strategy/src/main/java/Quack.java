@@ -1,4 +1,4 @@
-package duck.strategy;
+package Strategy;
 
 //Interface from QuackBehaviour
 public class Quack implements QuackBehaviour {

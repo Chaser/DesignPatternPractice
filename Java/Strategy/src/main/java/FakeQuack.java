@@ -1,4 +1,4 @@
-package duck.strategy;
+package Strategy;
 
 public class FakeQuack implements QuackBehaviour {
 	public void quack() {

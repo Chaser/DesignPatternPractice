@@ -1,4 +1,4 @@
-package duck.strategy;
+package Strategy;
 
 //Base interface for Quack behavior for a number of different ducks
 public interface QuackBehaviour {

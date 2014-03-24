@@ -1,9 +1,9 @@
 package Strategy;
 
-public class MallardDuck extends Duck {
+public class RubberDuck extends Duck {
 	//Constructor
-	public MallardDuck() {
-		quackBehaviour =  new Quack();
+	public RubberDuck() {
+		quackBehaviour =  new Squeak();
 		flyBehaviour = new FlyWithWings();
 	}
 
@@ -12,5 +12,4 @@ public class MallardDuck extends Duck {
 	}
 
 }
-
 
