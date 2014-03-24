@@ -37,3 +37,7 @@ build 	  	  	Build output. Created and deleted by the build file. Not under vers
      +-- libs 	  	  	 
      +-- classes 	  	  	 
      +-- test
+
+
+Strategy Notes
+-When compiling (javac) use -d ./ to specify root directory for package out

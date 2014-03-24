@@ -2,7 +2,6 @@ package Strategy;
 
 //NOTE -When compiling (javac) use -d ./ to specify root directory for package out
 //Running (java) use full package name Strategy.MiniDuckSimulator
-
 public class MiniDuckSimulator {
  
 	public static void main(String[] args) {
