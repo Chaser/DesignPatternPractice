@@ -39,5 +39,11 @@ build 	  	  	Build output. Created and deleted by the build file. Not under vers
      +-- test
 
 
-Strategy Notes
--When compiling (javac) use -d ./ to specify root directory for package out
+Build Notes
+  Compiling Command Line
+    -In project root directory call javac ./src/main/java/*.classes -d ./build/classes
+    *Build/classes has to exist!
+
+  Running Command Line
+    -In project root directory call java -classpath ./build/classes (PackageName)/(entrypoint)
+    *Example java -classpath ./build/classes Strategy.MiniDuckSimulator
