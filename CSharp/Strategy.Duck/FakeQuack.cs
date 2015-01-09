@@ -10,7 +10,7 @@ namespace Strategy
     {
         public void quack()
         {
-            Console.Out.WriteLine("sqawk");
+            Console.Out.WriteLine("Qwak");
         }
     }
 }

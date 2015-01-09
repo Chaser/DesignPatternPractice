@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Strategy
 {
-    class FlyRocketPowered : IFlyBehaviour
+    class FlyWithWings : IFlyBehaviour
     {
         public void fly()
         {
-            Console.Out.WriteLine("I'm flying with a rocket!");
+            Console.Out.WriteLine("I'm Flying!");
         }
     }
 }

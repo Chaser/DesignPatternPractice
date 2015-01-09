@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Strategy
 {
-    class FlyWithWings : IFlyBehaviour
+    class MuteQuack : IQuackBehaviour
     {
-        public void fly()
+        public void quack()
         {
-            Console.Out.WriteLine("<< Flap wings >>");
+            Console.Out.WriteLine("<<Silence>>");
         }
     }
 }

@@ -10,8 +10,8 @@ namespace Strategy
     {
         public DecoyDuck()
         {
-            flyBehaviour = new FlyWithWings();
-            quackBehaviour = new Quack();
+            flyBehaviour = new FlyNoWay();
+            quackBehaviour = new MuteQuack();
         }
 
         public override void display()

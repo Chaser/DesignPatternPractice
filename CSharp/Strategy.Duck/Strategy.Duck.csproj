@@ -50,8 +50,8 @@
     <Compile Include="FlyRocketPowered.cs" />
     <Compile Include="FlyNoWay.cs" />
     <Compile Include="IFlyBehaviour.cs" />
-    <Compile Include="QuackMute.cs" />
-    <Compile Include="QuackFake.cs" />
+    <Compile Include="MuteQuack.cs" />
+    <Compile Include="FakeQuack.cs" />
     <Compile Include="Quack.cs" />
     <Compile Include="IQuackBehaviour.cs" />
     <Compile Include="Program.cs" />
