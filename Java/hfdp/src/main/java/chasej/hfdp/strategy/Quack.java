@@ -1,4 +1,4 @@
-package Strategy;
+package chasej.hfdp.strategy;
 
 //Interface from QuackBehaviour
 public class Quack implements QuackBehaviour {

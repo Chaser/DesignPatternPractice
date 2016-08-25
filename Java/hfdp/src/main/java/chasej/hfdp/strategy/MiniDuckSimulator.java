@@ -1,7 +1,7 @@
-package Strategy;
+package chasej.hfdp.strategy;
 
 //NOTE -When compiling (javac) use -d ./ to specify root directory for package out
-//Running (java) use full package name Strategy.MiniDuckSimulator
+//Running (java) use full package name package chasej.hfdp.strategy.MiniDuckSimulator
 public class MiniDuckSimulator {
  
 	public static void main(String[] args) {

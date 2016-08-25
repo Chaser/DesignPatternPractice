@@ -1,4 +1,4 @@
-package Strategy;
+package chasej.hfdp.strategy;
 
 public abstract class Duck {
 	FlyBehaviour flyBehaviour;

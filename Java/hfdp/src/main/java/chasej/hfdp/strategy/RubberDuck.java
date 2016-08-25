@@ -1,8 +1,8 @@
-package Strategy;
+package chasej.hfdp.strategy;
 
-public class DecoyDuck extends Duck {
+public class RubberDuck extends Duck {
 	//Constructor
-	public DecoyDuck() {
+	public RubberDuck() {
 		quackBehaviour =  new Squeak();
 		flyBehaviour = new FlyWithWings();
 	}

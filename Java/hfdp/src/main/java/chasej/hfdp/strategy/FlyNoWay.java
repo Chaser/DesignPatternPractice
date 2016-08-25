@@ -1,4 +1,4 @@
-package Strategy;
+package chasej.hfdp.strategy;
 
 public class FlyNoWay implements FlyBehaviour {
 	public void fly() {

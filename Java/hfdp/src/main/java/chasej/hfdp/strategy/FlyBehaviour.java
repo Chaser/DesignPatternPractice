@@ -1,4 +1,4 @@
-package Strategy;
+package chasej.hfdp.strategy;
 
 //Base interface for Flying behaviour for a number of different ducks
 public interface FlyBehaviour {
