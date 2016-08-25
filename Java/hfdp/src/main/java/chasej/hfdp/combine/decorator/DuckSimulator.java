@@ -14,20 +14,20 @@ public class DuckSimulator
     }
 
     public void simulate() {
-        System.out.println("~~~ Duck Simulator ~~~");
+        System.out.println("~~~ Duck Simulator: With Decorator ~~~");
 
+        Quackable mallardDuck = new QuackCounter(new MallardDuck());
+        Quackable redheadDuck = new QuackCounter(new RedheadDuck());
+        Quackable duckCall = new QuackCounter(new DuckCall());
+        Quackable rubberDuck = new QuackCounter(new RubberDuck());
         // Decorator Pattern used to count the number of quacks
-        Quackable mallardDuckCount = new QuackCounter(new MallardDuck());
-        Quackable redheadDuckCount = new QuackCounter(new RedheadDuck());
-        Quackable duckCallCount = new QuackCounter(new DuckCall());
-        Quackable rubberDuckCount = new QuackCounter(new RubberDuck());
-        Quackable gooseDuckCount = new GooseAdapter(new Goose());
+        Quackable gooseDuck = new GooseAdapter(new Goose());
 
-        simulate(mallardDuckCount);
-        simulate(redheadDuckCount);
-        simulate(duckCallCount);
-        simulate(rubberDuckCount);
-        simulate(gooseDuckCount);
+        simulate(mallardDuck);
+        simulate(redheadDuck);
+        simulate(duckCall);
+        simulate(rubberDuck);
+        simulate(gooseDuck);
 
         System.out.println("The ducks quacked " + QuackCounter.getQuacks() + " times");
 

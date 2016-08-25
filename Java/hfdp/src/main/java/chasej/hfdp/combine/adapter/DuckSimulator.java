@@ -12,7 +12,7 @@ public class DuckSimulator
     }
 
     public void simulate() {
-        System.out.println("~~~ Duck Simulator ~~~");
+        System.out.println("~~~ Duck Simulator: With Goose Adapter ~~~");
 
         Quackable mallardDuck = new MallardDuck();
         Quackable redheadDuck = new RedheadDuck();
