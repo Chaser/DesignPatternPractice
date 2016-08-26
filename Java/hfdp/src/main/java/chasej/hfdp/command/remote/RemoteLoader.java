@@ -43,7 +43,7 @@ public class RemoteLoader {
         remoteControl.setCommand(2, ceilingFanOn, ceilingFanOff);
         remoteControl.setCommand(3, stereoOnWithCD, stereoOff);
 
-        //System.out.println(remoteControl);
+        System.out.println(remoteControl);
 
         remoteControl.onButtonWasPushed(0);
         remoteControl.offButtonWasPushed(0);
