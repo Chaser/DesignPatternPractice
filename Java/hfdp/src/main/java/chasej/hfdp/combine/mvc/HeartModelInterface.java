@@ -1,0 +1,12 @@
+package chasej.hfdp.combine.mvc;
+
+/**
+ * Created by chaseaj on 8/27/16.
+ */
+public interface HeartModelInterface {
+    int getHeartRate();
+    void registerObserver(BeatObserver o);
+    void removeObserver(BeatObserver o);
+    void registerObserver(BPMObserver o);
+    void removeObserver(BPMObserver o);
+}
