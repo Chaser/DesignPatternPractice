@@ -1,5 +1,5 @@
 from nose.tools import *
-from project_name.project_name import ProjectName
+from strategy.mini_duck_simulator import ProjectName
 
 def setup():
 	print "SETUP!"
@@ -9,5 +9,5 @@ def teardown():
 
 def test_basic():
 	print "I RAN!"
-	assert_equal('Test failed','Because not equal')
+	#assert_equal('Test failed','Because not equal')
 	
