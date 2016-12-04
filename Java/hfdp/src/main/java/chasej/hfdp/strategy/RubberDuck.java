@@ -8,8 +8,7 @@ public class RubberDuck extends Duck {
 	}
 
 	public void display() {
-		System.out.println("I'm a real Mallard Duck");
+		System.out.println("I'm a rubber duckie");
 	}
-
 }
 
