@@ -3,8 +3,8 @@ package chasej.hfdp.strategy;
 public class RubberDuck extends Duck {
 	//Constructor
 	public RubberDuck() {
-		quackBehaviour =  new Squeak();
-		flyBehaviour = new FlyWithWings();
+		flyBehavior = new FlyNoWay();
+		quackBehavior = new Squeak();
 	}
 
 	public void display() {

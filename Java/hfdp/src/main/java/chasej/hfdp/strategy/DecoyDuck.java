@@ -3,12 +3,12 @@ package chasej.hfdp.strategy;
 public class DecoyDuck extends Duck {
 	//Constructor
 	public DecoyDuck() {
-		quackBehaviour =  new Squeak();
-		flyBehaviour = new FlyWithWings();
+		setFlyBehavior(new FlyNoWay());
+		setQuackBehavior(new MuteQuack());
 	}
 
 	public void display() {
-		System.out.println("I'm a real Mallard Duck");
+		System.out.println("I'm a duck decoy");
 	}
 
 }

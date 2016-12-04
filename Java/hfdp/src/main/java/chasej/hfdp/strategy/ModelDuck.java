@@ -3,8 +3,8 @@ package chasej.hfdp.strategy;
 public class ModelDuck extends Duck {
 	//Constructor
 	public ModelDuck() {
-		quackBehaviour =  new Squeak();
-		flyBehaviour = new FlyWithWings();
+		flyBehavior = new FlyNoWay();
+		quackBehavior = new Quack();
 	}
 
 	public void display() {
