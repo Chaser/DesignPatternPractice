@@ -16,22 +16,22 @@ void MiniDuckSimulator(void) {
     DecoyDuck decoyDuck;
     ModelDuck modelDuck;
 
-    std::cout << "=========================" << std::endl;
+    std::cout << "-------------------------" << std::endl;
     mallardDuck.display();
     mallardDuck.performQuack();
     mallardDuck.performFly();
 
-    std::cout << "=========================" << std::endl;
+    std::cout << "-------------------------" << std::endl;
     rubberDuck.display();
     rubberDuck.performQuack();
     rubberDuck.performFly();
 
-    std::cout << "=========================" << std::endl;
+    std::cout << "-------------------------" << std::endl;
     decoyDuck.display();
     decoyDuck.performQuack();
     decoyDuck.performFly();
 
-    std::cout << "=========================" << std::endl;
+    std::cout << "-------------------------" << std::endl;
     modelDuck.display();
     modelDuck.performQuack();
     modelDuck.performFly();

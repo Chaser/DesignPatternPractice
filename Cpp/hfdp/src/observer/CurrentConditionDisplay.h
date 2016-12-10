@@ -8,11 +8,11 @@
 
 #include "Observer.h"
 #include "DisplayElement.h"
-#include "Subject.h"
+#include "WeatherData.h"
 
 class CurrentConditionDisplay: public Observer, public DisplayElement {
 public:
-    CurrentConditionDisplay(Subject * weatherData);
+    CurrentConditionDisplay(WeatherData * weatherData);
 
     void update(float temperature, float humidity, float pressure) override;
 
@@ -21,7 +21,7 @@ public:
 private:
     float temperature;
     float humidity;
-    Subject * weatherData;
+    WeatherData * weatherData;
 };
 
 

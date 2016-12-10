@@ -5,7 +5,7 @@
 #include <iostream>
 #include "CurrentConditionDisplay.h"
 
-CurrentConditionDisplay::CurrentConditionDisplay(Subject * weatherData) {
+CurrentConditionDisplay::CurrentConditionDisplay(WeatherData * weatherData) {
     this->weatherData = weatherData;
     this->weatherData->registerObserver(this);
 }
@@ -18,6 +18,6 @@ void CurrentConditionDisplay::update(float temperature, float humidity, float pr
 
 void CurrentConditionDisplay::display() {
     std::cout << "Current Temperature: " << this->temperature
-              << "F degress and " << this->humidity << "% humidity" << std::endl;
+              << "F degrees and " << this->humidity << "% humidity" << std::endl;
 }
 
