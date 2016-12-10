@@ -13,12 +13,20 @@ void WeatherData::registerObserver(Observer *observer) {
 }
 
 void WeatherData::removeObserver(Observer *observer) {
-    // TODO (chaseaj) : Look into examining vector;
+    auto position = std::find(observers.begin(), observers.end(), observer) - observers.begin();
+    // If >= then observer was not found
+    if (position < observers.size()) {
+        observers.erase(observers.begin() + position);
+    }
 }
 
 void WeatherData::notifyObservers(void) {
-    for(int i = 0; i < this->observers.size(); i++) {
-        Observer * observer = this->observers[i];
+//    for(int i = 0; i < this->observers.size(); i++) {
+//        Observer * observer = this->observers[i];
+//        observer->update(temperature, humidity, pressure);
+//    }
+
+    for (auto & observer : observers) {
         observer->update(temperature, humidity, pressure);
     }
 }
