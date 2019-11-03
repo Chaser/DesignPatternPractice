@@ -25,7 +25,7 @@ set(FACTORY
 )
 
 set(STATE
-
+    src/state/gumball/GumballMachine.cpp
 )
 
 set(SOURCE_FILES src/main.cpp ${STRATEGY} ${OBSERVER} ${DECORATOR} ${FACTORY} ${STATE})
