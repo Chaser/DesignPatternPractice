@@ -5,14 +5,30 @@ set(CMAKE_CXX_STANDARD 11)
 
 include_directories( ${CMAKE_PROJECT_DIR}/src/)
 
-set(STRATEGY src/strategy/MiniDuckSimulator.cpp src/strategy/Duck.cpp src/strategy/FakeQuack.cpp src/strategy/FlyNoWay.cpp src/strategy/FlyRocketPowered.cpp src/strategy/FlyWithWings.cpp src/strategy/MallardDuck.cpp src/strategy/ModelDuck.cpp src/strategy/MuteQuack.cpp src/strategy/Quack.cpp src/strategy/RubberDuck.cpp src/strategy/Squeak.cpp src/strategy/DecoyDuck.cpp src/strategy/RedHeadDuck.cpp)
-set(OBSERVER src/observer/WeatherData.cpp src/observer/CurrentConditionDisplay.cpp src/observer/WeatherStation.cpp src/observer/ForecastDisplay.cpp src/observer/HeatIndexDisplay.cpp src/observer/StatisticsDisplay.cpp src/observer/WeatherStationHeatIndex.cpp)
-set(DECORATOR src/decorator/StarbuzCoffee.cpp src/decorator/HouseBlend.cpp src/decorator/DarkRoast.cpp src/decorator/Espresso.cpp src/decorator/Decaf.cpp src/decorator/Milk.cpp src/decorator/Mocha.cpp src/decorator/Soy.cpp src/decorator/Whip.cpp)
-file(GLOB FACTORY
-        "${PROJECT_SOURCE_DIR}/src/factory/simple_factory/*.cpp"
-        "${PROJECT_SOURCE_DIR}/src/factory/simple_factory/*.c"
+set(STRATEGY src/strategy/ducks/MiniDuckSimulator.cpp src/strategy/ducks/Duck.cpp src/strategy/ducks/FakeQuack.cpp src/strategy/ducks/FlyNoWay.cpp src/strategy/ducks/FlyRocketPowered.cpp src/strategy/ducks/FlyWithWings.cpp src/strategy/ducks/MallardDuck.cpp src/strategy/ducks/ModelDuck.cpp src/strategy/ducks/MuteQuack.cpp src/strategy/ducks/Quack.cpp src/strategy/ducks/RubberDuck.cpp src/strategy/ducks/Squeak.cpp src/strategy/ducks/DecoyDuck.cpp src/strategy/ducks/RedHeadDuck.cpp)
+set(OBSERVER src/observer/weather/WeatherData.cpp src/observer/weather/CurrentConditionDisplay.cpp src/observer/weather/WeatherStation.cpp src/observer/weather/ForecastDisplay.cpp src/observer/weather/HeatIndexDisplay.cpp src/observer/weather/StatisticsDisplay.cpp src/observer/weather/WeatherStationHeatIndex.cpp)
+set(DECORATOR
+        src/decorator/starbuz/StarbuzCoffee.cpp
+        src/decorator/starbuz/HouseBlend.cpp
+        src/decorator/starbuz/DarkRoast.cpp
+        src/decorator/starbuz/Espresso.cpp
+        src/decorator/starbuz/Decaf.cpp
+        src/decorator/starbuz/Milk.cpp
+        src/decorator/starbuz/Mocha.cpp
+        src/decorator/starbuz/Soy.cpp
+        src/decorator/starbuz/Whip.cpp
 )
-set(SOURCE_FILES src/main.cpp ${STRATEGY} ${OBSERVER} ${DECORATOR} ${FACTORY})
+
+set(FACTORY
+        src/factory/simple_factory/PizzaTestDrive.cpp
+        src/factory/simple_factory/Pizza.cpp
+)
+
+set(STATE
+
+)
+
+set(SOURCE_FILES src/main.cpp ${STRATEGY} ${OBSERVER} ${DECORATOR} ${FACTORY} ${STATE})
 
 add_executable(hfdp ${SOURCE_FILES})
 add_custom_target(run
